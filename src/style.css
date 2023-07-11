@@ -1,0 +1,127 @@
+body,
+button,
+input {
+  font-family: 'Lora', sans-serif;
+}
+
+body {
+  background: rgb(3, 51, 78);
+  color: #EAEAEA;
+  /* color: rgb(13, 81, 81); */
+}
+
+.container {
+  /* background-color: azure; */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.container header {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container header h1 {
+  background: linear-gradient(98deg, #4AC7FA 0%, #E649F5 100%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+header form {
+  display: flex;
+  max-width: 324px;
+  width: 100%;
+}
+
+header form input {
+  padding: 16px;
+  font-size: 16px;
+  width: 100%;
+
+  border-radius: 4px 0 0 4px;
+  border: 3px solid transparent;
+  border-bottom-width: 0;
+
+  transition: border-color 200ms;
+}
+
+header form input:hover {
+  border-color: #4AC7FA;
+}
+
+header form button {
+  width: 56px;
+
+  border-radius: 0 4px 4px 0;
+  background: #4AC7FA;
+  line-height: 0;
+  /* arruma a linha do botao com o input */
+
+  transition: filter 200ms;
+}
+
+header form button:hover {
+  filter: brightness(80%);
+}
+
+.container main {
+  /* background: hsl(240, 31%, 71%); */
+
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: calc(100vh - 149px)
+}
+
+main h2 {
+  text-transform: uppercase;
+
+  background-image: linear-gradient(98deg, #4AC7FA 0%, #E649F5 100%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color:
+    transparent;
+}
+
+main ul {
+  list-style: none;
+
+  margin-top: 38px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+main ul li {
+  background-color: #2F2F32;
+  padding: 16px;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 2px solid transparent;
+
+  transition: all 200ms;
+}
+
+main ul li:hover {
+  transform: translateY(-10px) scale(120%);
+  border-color: #4AC7FA;
+}
+
+main ul li:hover span{
+  color: #95eba8;
+}
